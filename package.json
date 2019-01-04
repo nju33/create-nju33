@@ -1,6 +1,6 @@
 {
   "name": "create-nju33",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "bin": {
     "create-nju33": "bin/create-nju33.js"
   },
