@@ -20,15 +20,15 @@ const options = {
       color: 'blue',
       label: 'yarn add -P',
     },
-    copied: {
+    copy: {
       badge: '💉',
       color: 'yellow',
-      label: 'copied',
+      label: 'copy',
     },
-    override: {
+    overwrite: {
       badge: '✏️',
       color: 'red',
-      label: 'override'
+      label: 'overwrite'
     }
   },
 };

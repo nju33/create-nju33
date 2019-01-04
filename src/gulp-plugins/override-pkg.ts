@@ -14,7 +14,7 @@ export const overridePkg = (override: object) => {
       );
 
       Object.keys(toShallow(override)).forEach(modifiedPropName => {
-        signale.override(modifiedPropName);
+        signale.overwrite(modifiedPropName);
       });
 
       cb(null, file);

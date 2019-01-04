@@ -6,7 +6,7 @@ export const log = {
   copied: through.obj((file, _enc, cb) => {
     const fileName = path.basename(file.path);
 
-    signale.copied(fileName);
+    signale.copy(fileName);
 
     cb(null, file);
   }),

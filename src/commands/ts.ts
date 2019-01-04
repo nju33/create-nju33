@@ -94,7 +94,7 @@ export const ts: CommandFactory<Arguments<TsArgs>> = config => async args => {
   const scriptsList = SCRIPTS_LIST[type];
 
   gulp.series([
-    done =>
+    () =>
       gulp
         .src(pkgName)
         .pipe(
