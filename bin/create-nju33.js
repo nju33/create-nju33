@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
-const yargs = require('yargs');
+const rootYargs = require('yargs');
 
-yargs
-  .command('hello', '', () => {
+const noop = () => {};
+
+rootYargs
+  .command('hello', 'just say hello', noop, () => {
     console.log(`nju33 > Hello ${process.env.USER}`);
   })
-  .showHelp().argv;
+  .demandCommand(1)
+  .showHelpOnFail(false, 'Specify --help for available options')
+  .help('help').argv;
