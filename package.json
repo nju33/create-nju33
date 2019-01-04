@@ -7,7 +7,8 @@
   "files": [
     "bin",
     "files",
-    "index.js"
+    "index.js",
+    "prettier.config.js"
   ],
   "main": "index.js",
   "repository": "git@github.com:nju33/create-nju33.git",
