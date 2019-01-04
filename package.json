@@ -2,7 +2,7 @@
   "name": "create-nju33",
   "version": "0.0.1",
   "bin": {
-    "nju33": "bin/nju33.js"
+    "create-nju33": "bin/create-nju33.js"
   },
   "main": "index.js",
   "repository": "git@github.com:nju33/create-nju33.git",
