@@ -7,7 +7,7 @@
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.3.tgz#2a06c352df2f5292316e469f5c47d465cfb944bf"
   integrity sha512-zkdulCZfvQ4DlIb9Iq7jyBludV/A6Pa5EPJpI0TwLlHg0aAJgDVDe1eSH2DK9V6OGvmkTK8dTRAq+9YwVRMpqQ==
 
-"@nju33/tsconfig-main@^0.0.3":
+"@nju33/tsconfig-main@0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-main/-/tsconfig-main-0.0.3.tgz#0845f1ecd354c19240195db006b05eeee83d2329"
   integrity sha512-QQZc+Lf/ylnBqDWY48tx/Z9723I+EFRQxmUz+Or/FUoNzy9ZSYo5HlW3HIpPfu9UhiwVvmeqIeZ+idTgRKibjA==
@@ -44,7 +44,7 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/gulp@^4.0.5":
+"@types/gulp@4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@types/gulp/-/gulp-4.0.5.tgz#f5f498d5bf9538364792de22490a12c0e6bc5eb4"
   integrity sha512-nx1QjPTiRpvLfYsZ7MBu7bT6Cm7tAXyLbY0xbdx2IEMxCK2v2urIhJMQZHW0iV1TskM71Xl6p2uRRuWDbk+/7g==
@@ -68,24 +68,24 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
 
-"@types/plugin-error@^0.1.0":
+"@types/plugin-error@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@types/plugin-error/-/plugin-error-0.1.0.tgz#47e8efd62ccdf6c495f7154c3033e1360353c882"
   integrity sha512-iFWVbyq1mvC3YuFhJMyToA1GXEbvRWoOFIWZXZZ6fd8Qm5b0Qs62i6evnoHcPXXcQgXq8r2RaXQrdXZC/IsTiQ==
 
-"@types/prettier@^1.15.2":
+"@types/prettier@1.15.2":
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.15.2.tgz#91594ea7cb6f3b1f7ea69f32621246654c7cc231"
   integrity sha512-XIB0ZCaFZmWUHAa9dBqP5UKXXHwuukmVlP+XcyU94dui2k+l2lG+CHAbt2ffenHPUqoIs5Beh8Pdf2YEq/CZ7A==
 
-"@types/signale@^1.2.0":
+"@types/signale@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@types/signale/-/signale-1.2.0.tgz#575719e586a1352cf1de04478b5fc0920e221000"
   integrity sha512-67bRC/sXh/d6hS+apQ23v3btDC72P8lsIlNZULprtKpCRxrmA9Jd3spHR54HP0U2D63HjCWlhp17L/nuyh2AXw==
   dependencies:
     "@types/node" "*"
 
-"@types/through2@^2.0.34":
+"@types/through2@2.0.34":
   version "2.0.34"
   resolved "https://registry.yarnpkg.com/@types/through2/-/through2-2.0.34.tgz#9c2a259a238dace2a05a2f8e94b786961bc27ac4"
   integrity sha512-nhRG8+RuG/L+0fAZBQYaRflXKjTrHOKH8MFTChnf+dNVMxA3wHYYrfj0tztK0W51ABXjGfRCDc0vRkecCOrsow==
@@ -122,7 +122,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/yargs@^12.0.5":
+"@types/yargs@12.0.5":
   version "12.0.5"
   resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-12.0.5.tgz#f4f85fe198e1e9cedc0bb53a8c2d30fb34299e50"
   integrity sha512-y51XRWWg1GiW4+mV2zmFQUqJT3bX7nuUaXW4j8a2dFvT9ZlaNLjb7ZxcUSDyklt/UBWrW2+31x+hQpRzxaTFzw==
@@ -2180,7 +2180,7 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-prettier@^1.15.3:
+prettier@1.15.3:
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.15.3.tgz#1feaac5bdd181237b54dbe65d874e02a1472786a"
   integrity sha512-gAU9AGAPMaKb3NNSUUuhhFAS7SCO4ALTN4nRIn6PJ075Qd28Yn2Ig2ahEJWdJwJmlEBTUfC7mMUSFy8MwsOCfg==
@@ -2320,7 +2320,7 @@ remove-trailing-separator@^1.0.1, remove-trailing-separator@^1.1.0:
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
   integrity sha1-wkvOKig62tW8P1jg1IJJuSN52O8=
 
-renovate-config-nju33@^0.0.1:
+renovate-config-nju33@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/renovate-config-nju33/-/renovate-config-nju33-0.0.1.tgz#981f45c61bdb4bcac81e5eaa133814bdd56c9ca7"
   integrity sha512-w9uSZLLz66BN+ZaHgIQxHlHt7kDM+EsonFJpdntlvvXm4a8hiFUUS/bDsT+HYmuUdOUgS5rV1H1xNYWeQCmDZg==
@@ -2782,7 +2782,7 @@ to-through@^2.0.0:
   dependencies:
     through2 "^2.0.3"
 
-ts-node@^7.0.1:
+ts-node@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-7.0.1.tgz#9562dc2d1e6d248d24bc55f773e3f614337d9baf"
   integrity sha512-BVwVbPJRspzNh2yfslyT1PSbl5uIk03EZlb493RKHN4qej/D06n1cEhjlOJG69oFsE7OT8XjpTUcYf6pKTLMhw==
@@ -2801,7 +2801,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.2.2:
+typescript@3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.2.tgz#fe8101c46aa123f8353523ebdcf5730c2ae493e5"
   integrity sha512-VCj5UiSyHBjwfYacmDuc/NOk4QQixbE+Wn7MFJuS0nRuPQbof132Pw4u53dm264O8LPc2MVsc7RJNml5szurkg==

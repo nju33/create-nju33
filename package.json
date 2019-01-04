@@ -14,17 +14,17 @@
   "author": "nju33 <nju33.ki@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@nju33/tsconfig-main": "^0.0.3",
-    "@types/gulp": "^4.0.5",
-    "@types/plugin-error": "^0.1.0",
-    "@types/prettier": "^1.15.2",
-    "@types/signale": "^1.2.0",
-    "@types/through2": "^2.0.34",
-    "@types/yargs": "^12.0.5",
-    "prettier": "^1.15.3",
-    "renovate-config-nju33": "^0.0.1",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.2.2"
+    "@nju33/tsconfig-main": "0.0.3",
+    "@types/gulp": "4.0.5",
+    "@types/plugin-error": "0.1.0",
+    "@types/prettier": "1.15.2",
+    "@types/signale": "1.2.0",
+    "@types/through2": "2.0.34",
+    "@types/yargs": "12.0.5",
+    "prettier": "1.15.3",
+    "renovate-config-nju33": "0.0.1",
+    "ts-node": "7.0.1",
+    "typescript": "3.2.2"
   },
   "dependencies": {
     "deep-shallow": "^0.1.2",
