@@ -1,0 +1,5 @@
+{
+  "extends": "@nju33/tsconfig-react-types",
+  "include": ["src/**/*"],
+  "exclude": ["src/__tests__/**/*", "src/**/*test*", "src/dev.ts"]
+}
