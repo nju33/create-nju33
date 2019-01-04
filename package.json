@@ -9,6 +9,8 @@
   "author": "nju33 <nju33.ki@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@nju33/tsconfig-main": "^0.0.3",
+    "@types/yargs": "^12.0.5",
     "prettier": "^1.15.3",
     "renovate-config-nju33": "^0.0.1"
   },
@@ -16,6 +18,8 @@
     "yargs": "^12.0.5"
   },
   "scripts": {
+    "prepare": "yarn build",
+    "build": "tsc",
     "test": ":"
   }
 }

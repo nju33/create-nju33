@@ -1,0 +1,7 @@
+{
+  "include": ["src"],
+  "extends": "@nju33/tsconfig-main",
+  "compilerOptions": {
+    "outDir": "bin"
+  }
+}
