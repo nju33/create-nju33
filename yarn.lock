@@ -26,14 +26,14 @@
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.5.tgz#b486c25667b3a3329e2a1040fab185ebfc99c2f3"
   integrity sha512-hL5ioobDmguNE8hB8BoTlf7BYot+/AQ/aPd/kbSxcOQdu3u8AxBuxo04194BjUUsMfni/XJDV2k4jULa0Nibog==
 
-"@nju33/tsconfig-main@^0.0.5":
+"@nju33/tsconfig-main@0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-main/-/tsconfig-main-0.0.5.tgz#08c909cb529b71b557df9594a30fe4d9978d65d5"
   integrity sha512-OpEGCcwtrpXdp7xcfoEDc3X8XO62CHl1btIzGFDIdsTQlxCdWLR5AER4aAqOn3jYSu7Zw5bEUtj4/cFbbgaBeA==
   dependencies:
     "@nju33/tsconfig-base" "^0.0.5"
 
-"@nju33/tslint@^0.0.5":
+"@nju33/tslint@0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@nju33/tslint/-/tslint-0.0.5.tgz#897d2deeb8596211af105808f8e9dd7221138392"
   integrity sha512-w2BmhlIfVMdcAyzIydr5sqdl3kSzuY5hdo5yOkBdk9wG34IMXnjEO2GDp8m0FIbhMYDRCQ9bGIBcC1EKvNCPpA==
