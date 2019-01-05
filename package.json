@@ -15,7 +15,7 @@
   "author": "nju33 <nju33.ki@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@nju33/tsconfig-main": "0.0.3",
+    "@nju33/tsconfig-main": "0.0.5",
     "@types/gulp": "4.0.5",
     "@types/plugin-error": "0.1.0",
     "@types/prettier": "1.15.2",
