@@ -16,7 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "@nju33/tsconfig-main": "0.0.6",
-    "@nju33/tslint": "0.0.5",
+    "@nju33/tslint": "0.0.6",
     "@types/gulp": "4.0.5",
     "@types/gulp-rename": "0.0.33",
     "@types/plugin-error": "0.1.0",
