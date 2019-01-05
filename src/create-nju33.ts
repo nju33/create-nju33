@@ -18,7 +18,7 @@ yargs
   })
   .command(
     'ts',
-    'to create ts env',
+    'to create the TypeScript env',
     {
       type: {
         alias: 't',
