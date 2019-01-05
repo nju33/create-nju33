@@ -1,0 +1,31 @@
+{packageName}
+
+{badges}
+
+{packageDescription}
+
+## Usage
+
+````js
+/**
+ * To prepare of using the `NAME`
+ * ```sh
+ * yarn add {packageName}
+ * ```
+ */
+import NAME from '{packageName}';
+````
+
+or
+
+```html
+<script src="https://unpkg.com/{repoName}/NAME.js"></script>
+<script>
+  // Can use the `NAME` here.
+</script>
+```
+
+## Example
+
+```ts
+```

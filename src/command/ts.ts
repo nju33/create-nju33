@@ -1,8 +1,8 @@
 import path from 'path';
 import {Arguments} from 'yargs';
 import gulp from 'gulp';
-import {CommandFactory} from './command-factory';
-import * as gulpPlugins from '../gulp-plugins';
+import {CommandFactory} from 'types/command-factory';
+import * as gulpPlugins from '../gulp-plugin';
 import {yarn} from '../helpers/yarn';
 
 interface TsArgs {
@@ -98,7 +98,7 @@ export const ts: CommandFactory<Arguments<TsArgs>> = config => async args => {
       gulp
         .src(pkgName)
         .pipe(
-          gulpPlugins.overridePkg({
+          gulpPlugins.overwritePkg({
             scripts: scriptsList,
           }),
         )

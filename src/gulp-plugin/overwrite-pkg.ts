@@ -4,7 +4,7 @@ import PluginError from 'plugin-error';
 import mergeDeep = require('merge-deep');
 import signale from '../instances/signale';
 
-export const overridePkg = (override: object) => {
+export const overwritePkg = (override: object) => {
   return through.obj((file, _enc, cb) => {
     try {
       file.contents = Buffer.from(

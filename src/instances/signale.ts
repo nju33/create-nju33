@@ -25,6 +25,11 @@ const options = {
       color: 'yellow',
       label: 'copy',
     },
+    generated: {
+      badge: '💉',
+      color: 'yellow',
+      label: 'generated',
+    },
     overwrite: {
       badge: '✏️',
       color: 'red',
