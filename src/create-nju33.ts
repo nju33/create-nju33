@@ -51,6 +51,12 @@ const FILES_ROOT = path.resolve(__dirname, '../files');
       {} as any,
       command.prettier(commandOpts),
     )
+    .command(
+      'renovate',
+      'to create the renovate.json',
+      {} as any,
+      command.renovate(commandOpts),
+    )
     .demandCommand(1)
     .showHelpOnFail(false, 'Specify --help for available options')
     .help('help').argv;

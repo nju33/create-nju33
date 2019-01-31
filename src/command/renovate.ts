@@ -7,11 +7,8 @@ import * as gulpPlugins from '../gulp-plugin';
 import signale from '../instances/signale';
 import {yarn} from '../helpers/yarn';
 
-export const prettier: CommandFactory<Arguments<{}>> = config => async () => {
-  const PACKAGE_PATH = path.join(
-    config.filesRoot,
-    'prettier/prettier.config.js',
-  );
+export const renovate: CommandFactory<Arguments<{}>> = config => async () => {
+  const PACKAGE_PATH = path.join(config.filesRoot, 'renovate/renovate.json');
 
   gulp
     .src(PACKAGE_PATH)
@@ -22,8 +19,7 @@ export const prettier: CommandFactory<Arguments<{}>> = config => async () => {
       new Listr([
         {
           title: 'Install devDependencies',
-          task: ctx =>
-            yarn(['prettier', '@nju33/prettier'], {type: 'dev', ctx}),
+          task: ctx => yarn(['renovate-config-nju33'], {type: 'dev', ctx}),
         },
       ])
         .run({postProcesses: []})
