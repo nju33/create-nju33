@@ -3,5 +3,6 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
-  testRegex: '(/__tests__/.*|.test).tsx?$',
+  testRegex: 'src/.*(/__tests__/.*|.test).tsx?$',
+  setupFilesAfterEnv: ['<rootDir>/__tests__/setup-tests.ts'],
 };

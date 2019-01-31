@@ -9,7 +9,7 @@ const PARSER_NAMES: {readonly [x: string]: string} = {
   get tsx() {
     return this.ts;
   },
-  js: 'babylon',
+  js: 'babel',
   get jsx() {
     return this.js;
   },
@@ -31,6 +31,10 @@ const PARSER_NAMES: {readonly [x: string]: string} = {
 export const prettier = () =>
   through.obj((file, _enc, cb) => {
     const fileName = file.history[file.history.length - 1] as string;
+    if (!/\.[tj]sx?$/.test(fileName)) {
+      return cb(null, file);
+    }
+
     const extName = path.extname(fileName);
     const parser = (PARSER_NAMES as {[x: string]: string})[extName.slice(1)];
     const content: any = file.contents.toString();

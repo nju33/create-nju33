@@ -3,11 +3,13 @@ import signale from '../instances/signale.js';
 
 export const yarn = (
   dependencies: string[] = [],
-  config: {type?: 'dev' | 'peer'} = {},
+  options: {type?: 'dev' | 'peer'; ctx: {postProcesses: any[]}} = {
+    ctx: {postProcesses: []},
+  },
 ) => {
   return new Promise((resolve, reject) => {
     const flag = (() => {
-      switch (config.type) {
+      switch (options.type) {
         case 'dev': {
           return '-D';
         }
@@ -26,15 +28,14 @@ export const yarn = (
 
     const args = ['add', flag, ...dependencies].filter(Boolean) as string[];
     execFile('yarn', args, err => {
-      // if (err !== null) {
-      //   return reject(err);
-      // }
-
-      const signaleName = ['yarn', 'add', config.type]
+      const signaleName = ['yarn', 'add', options.type]
         .filter(Boolean)
         .join('-');
-      dependencies.forEach(dependency => {
-        (signale as {[x: string]: any})[signaleName](dependency);
+
+      options.ctx.postProcesses.push(() => {
+        dependencies.forEach(dependency => {
+          (signale as {[x: string]: any})[signaleName](dependency);
+        });
       });
       resolve();
     });
