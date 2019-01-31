@@ -28,6 +28,10 @@ export const yarn = (
 
     const args = ['add', flag, ...dependencies].filter(Boolean) as string[];
     execFile('yarn', args, err => {
+      if (err !== null) {
+        return reject(err);
+      }
+
       const signaleName = ['yarn', 'add', options.type]
         .filter(Boolean)
         .join('-');

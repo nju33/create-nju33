@@ -48,6 +48,7 @@
   },
   "scripts": {
     "prepare": "yarn build",
+    "dev": "tsc --watch",
     "build": "tsc",
     "test": ":"
   }

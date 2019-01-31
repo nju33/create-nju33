@@ -233,12 +233,17 @@ const getPkgScripts = ({pkg, options}: Context) => {
 
 export const ts: CommandFactory<Arguments<TsArgs>> = config => async args => {
   const answers = await inquire({pkg: config.pkg, args});
-  const options = {...defaultOptions, ...args, ...answers};
+  const options: TsArgs = {...defaultOptions, ...args, ...answers};
   const context: Context = {pkg: config.pkg, options};
 
   if (options.type === undefined) {
     signale.error('options.type が定義されていないので、処理を終わります');
-    return;
+    return process.exit(1);
+  }
+
+  if (options.type === 'module' && options.moduleName === '') {
+    signale.error('options.moduleName が定義されていないので、処理を終わります');
+    return process.exit(1);
   }
 
   const FILES_TS = path.join(config.filesRoot, 'typescript');

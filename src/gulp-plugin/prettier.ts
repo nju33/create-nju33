@@ -31,7 +31,7 @@ const PARSER_NAMES: {readonly [x: string]: string} = {
 export const prettier = () =>
   through.obj((file, _enc, cb) => {
     const fileName = file.history[file.history.length - 1] as string;
-    if (!/\.[tj]sx?$/.test(fileName)) {
+    if (!fileName.startsWith('.') && path.extname(fileName) === '') {
       return cb(null, file);
     }
 
