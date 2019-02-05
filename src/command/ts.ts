@@ -26,10 +26,6 @@ interface TsArgsMinimum {
   type: 'minimum';
 }
 
-// interface TsArgs {
-//   type: 'bin' | 'module' | 'react-module' | 'Minimum';
-// }
-
 type TsArgs = TsArgsModule | TsArgsReactModule | TsArgsBin | TsArgsMinimum;
 
 interface Context {
@@ -96,6 +92,43 @@ const DEPENDENCY_LIST: {[x: string]: any} = {
       'styled-components@^4.0.0',
     ],
   },
+  site: {
+    dependencies: [],
+    devDependencies: [
+      '@types/react',
+      'react',
+      '@types/react-dom',
+      'react-dom',
+      '@types/react-router-dom',
+      'react-router-dom',
+      'redux',
+      '@types/react-redux',
+      'react-redux',
+      '@types/enzyme',
+      'enzyme',
+      '@types/enzyme-adapter-react-16',
+      'enzyme-adapter-react-16',
+      'react-test-renderer',
+      'typescript',
+      '@nju33/tsconfig-react-module',
+      'tslint',
+      '@nju33/tslint',
+      'typedoc',
+      'jest',
+      '@types/jest',
+      'ts-jest',
+      'webpack',
+      'webpack-cli',
+      'webpack-dev-server',
+      'ts-loader',
+      'html-webpack-plugin',
+    ],
+    peerDependencies: [
+      'react@^16.4.0',
+      'react-dom@^16.4.0',
+      'styled-components@^4.0.0',
+    ],
+  },
   minimum: {
     dependencies: [],
     devDependencies: [
@@ -142,6 +175,11 @@ const SCRIPTS_LIST: {[x: string]: any} = {
     'build.types': 'tsc -P tsconfig.types.json --emitDeclarationOnly',
     build: 'yarn build.main; yarn build.module; yarn build.types',
   },
+  site: {
+    test: 'jest',
+    dev: 'webpack-dev-server --port 3333',
+    build: 'webpack',
+  },
   minimum: {
     test: 'jest',
     dev: ':',
@@ -167,6 +205,7 @@ const inquire: (context: {
         {title: 'Module', value: 'module'},
         {title: 'React Module', value: 'react-module'},
         {title: 'Bin', value: 'bin'},
+        {title: 'Site', value: 'site'},
         {title: 'Minimum', value: 'minimum'},
       ],
     });
@@ -242,7 +281,9 @@ export const ts: CommandFactory<Arguments<TsArgs>> = config => async args => {
   }
 
   if (options.type === 'module' && options.moduleName === '') {
-    signale.error('options.moduleName が定義されていないので、処理を終わります');
+    signale.error(
+      'options.moduleName が定義されていないので、処理を終わります',
+    );
     return process.exit(1);
   }
 
