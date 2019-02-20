@@ -1,4 +1,4 @@
-# create-nju3
+# create-nju33
 
 ```sh
 $ yarn create nju33 --help
