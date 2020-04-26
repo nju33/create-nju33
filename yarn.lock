@@ -121,15 +121,10 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
 
-"@types/plugin-error@0.1.1":
+"@types/plugin-error@0.1.1", "@types/plugin-error@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@types/plugin-error/-/plugin-error-0.1.1.tgz#22da36bc716285d2d1fbea7434ae3006f46801ba"
   integrity sha512-Up9nG/aPoFz+80/RY3TgSGa8Y0Ge/4jCyz6FLBkKHafFD+U8I3saMyncFqLUrtd0z05WhUCrR5/sMiML2aJNhA==
-
-"@types/plugin-error@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@types/plugin-error/-/plugin-error-0.1.0.tgz#47e8efd62ccdf6c495f7154c3033e1360353c882"
-  integrity sha512-iFWVbyq1mvC3YuFhJMyToA1GXEbvRWoOFIWZXZZ6fd8Qm5b0Qs62i6evnoHcPXXcQgXq8r2RaXQrdXZC/IsTiQ==
 
 "@types/prettier@1.19.1":
   version "1.19.1"
@@ -909,6 +904,11 @@ es6-weak-map@^2.0.1:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
 
+escape-goat@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-2.1.1.tgz#1b2dc77003676c457ec760b2dc68edb648188675"
+  integrity sha512-8/uIhbG12Csjy2JEW7D9pHbreaVaS/OpN3ycnyvElTdwM5n6GY6W6e2IPemfvGZeUMqZ9A/3GqIZMgKnBhAw/Q==
+
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
@@ -1281,15 +1281,15 @@ gulp-cli@^2.0.0:
     v8flags "^3.0.1"
     yargs "^7.1.0"
 
-gulp-pupa@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/gulp-pupa/-/gulp-pupa-0.0.3.tgz#eec381b4c6a6497f5e83883d53befb0f3f053851"
-  integrity sha512-l3jmOIBhZcJUslJKQA/SiaXDfLl78QmkQtsMqip2umBXhnlXr04GU0H1h7BoX18VY2sf6YmkwmNvD7zoChjDZg==
+gulp-pupa@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-pupa/-/gulp-pupa-1.0.0.tgz#d5373684918a351c3a6d293129815dee6e9fce71"
+  integrity sha512-c1j5mDkYTMjmerQ6ycuwUBdjlN/U5xYjD8FFw0bKR25ViTponBw7ZQHk5Tu9KMa9uJ56XL6KGHdF4KPU6a6uhA==
   dependencies:
-    "@types/plugin-error" "^0.1.0"
+    "@types/plugin-error" "^0.1.1"
     plugin-error "^1.0.1"
-    pupa "^1.0.0"
-    through2 "^3.0.0"
+    pupa "^2.0.0"
+    through2 "^3.0.1"
 
 gulp-rename@^1.4.0:
   version "1.4.0"
@@ -2515,10 +2515,12 @@ pumpify@^1.3.5:
     inherits "^2.0.3"
     pump "^2.0.0"
 
-pupa@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/pupa/-/pupa-1.0.0.tgz#9a9568a5af7e657b8462a6e9d5328743560ceff6"
-  integrity sha1-mpVopa9+ZXuEYqbp1TKHQ1YM7/Y=
+pupa@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/pupa/-/pupa-2.0.1.tgz#dbdc9ff48ffbea4a26a069b6f9f7abb051008726"
+  integrity sha512-hEJH0s8PXLY/cdXh66tNEQGndDrIKNqNC5xmrysZy3i5C3oEoLna7YAOad+7u125+zH1HNXUmGEkrhb3c2VriA==
+  dependencies:
+    escape-goat "^2.0.0"
 
 rc@^1.2.7:
   version "1.2.8"
@@ -3080,6 +3082,13 @@ through2@^3.0.0:
   dependencies:
     readable-stream "2 || 3"
     xtend "~4.0.1"
+
+through2@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
+  integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
+  dependencies:
+    readable-stream "2 || 3"
 
 time-stamp@^1.0.0:
   version "1.1.0"
