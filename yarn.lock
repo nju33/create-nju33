@@ -143,10 +143,10 @@
   dependencies:
     "@types/normalize-package-data" "*"
 
-"@types/signale@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@types/signale/-/signale-1.2.0.tgz#575719e586a1352cf1de04478b5fc0920e221000"
-  integrity sha512-67bRC/sXh/d6hS+apQ23v3btDC72P8lsIlNZULprtKpCRxrmA9Jd3spHR54HP0U2D63HjCWlhp17L/nuyh2AXw==
+"@types/signale@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@types/signale/-/signale-1.4.1.tgz#6137a6fd7960b48703dd2793c5b795480368b246"
+  integrity sha512-05d9fUDqRnt36rizLgo38SbPTrkMzdhXpvSHSAhxzokgIUPGNUoXHV0zYjPpTd4IryDADJ0mGHpfJ/Yhjyh9JQ==
   dependencies:
     "@types/node" "*"
 
