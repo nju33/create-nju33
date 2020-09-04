@@ -15,7 +15,7 @@
   "author": "nju33 <nju33.ki@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@nju33/tsconfig-main": "0.0.6",
+    "@nju33/tsconfig-main": "0.0.26",
     "@nju33/tslint": "0.0.26",
     "@types/gulp": "4.0.6",
     "@types/gulp-rename": "0.0.33",
