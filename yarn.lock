@@ -185,10 +185,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/yargs@12.0.18":
-  version "12.0.18"
-  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-12.0.18.tgz#df12d5f1ab40463d445dd0ee44999b527c1364da"
-  integrity sha512-S5zJIrr2/n0DJpbwfpUc7wt9zQF0Y4GYKecxjPZ/25xPfsCIl+u+wD/HjyNZ6QPwmDPcPJmt9uMXtriRW/FiAw==
+"@types/yargs@12.0.19":
+  version "12.0.19"
+  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-12.0.19.tgz#04ec85aa12bb0b0f05a77699396d39417f0b837f"
+  integrity sha512-1wT5nWbZ0p2dJtKi9S0CjCKzQoVWby4VjtqOeqhTK8XK3nUHWqKWWuji29PzBC7cCDJatyA1VRzQnbEPLiXRSw==
 
 abbrev@1:
   version "1.1.1"
