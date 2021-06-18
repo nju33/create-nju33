@@ -29,7 +29,7 @@
     "@types/yargs": "12.0.19",
     "renovate-config-nju33": "0.0.1",
     "ts-node": "7.0.1",
-    "typescript": "3.9.9"
+    "typescript": "3.9.10"
   },
   "dependencies": {
     "deep-shallow": "^0.1.2",
