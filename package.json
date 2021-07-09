@@ -22,7 +22,7 @@
     "@types/listr": "0.14.4",
     "@types/plugin-error": "0.1.1",
     "@types/prettier": "1.19.1",
-    "@types/prompts": "1.2.0",
+    "@types/prompts": "2.0.14",
     "@types/read-pkg": "3.0.0",
     "@types/signale": "1.4.2",
     "@types/through2": "2.0.36",
