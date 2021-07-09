@@ -34,7 +34,7 @@
   "dependencies": {
     "deep-shallow": "^0.1.2",
     "gulp": "^4.0.0",
-    "gulp-pupa": "^0.0.3",
+    "gulp-pupa": "^1.0.0",
     "gulp-rename": "^1.4.0",
     "listr": "^0.14.3",
     "merge-deep": "^3.0.2",
