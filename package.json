@@ -28,7 +28,7 @@
     "@types/through2": "2.0.36",
     "@types/yargs": "12.0.20",
     "renovate-config-nju33": "0.0.1",
-    "ts-node": "7.0.1",
+    "ts-node": "10.2.1",
     "typescript": "3.9.10"
   },
   "dependencies": {
